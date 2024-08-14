@@ -1,0 +1,391 @@
+body{
+    background-color: #f0ece2;
+   
+    
+}
+/*nav bar*/
+header{
+    top: 0;
+    position: fixed;
+    left: 0px;
+    right: 0;
+    color: black;
+    align-items: center;
+    display: flex;
+  padding: 20px 7%;
+  justify-content: space-between;
+  font-size: 30px;
+  z-index: 99;
+  
+    
+}
+#menu-bar{
+    display: none;
+}
+.logoimg
+{
+position: absolute;
+margin-right: -80px;
+z-index: 2;
+margin-left: -100px;
+
+
+}
+header .logo
+{
+    font-size: 50px;
+    color: rgb(6, 31, 20);
+    margin-left: 100px;
+    font-family: "Love Light", cursive;
+    font-weight: bolder;
+    
+}
+.bgcolor
+{
+    background-color: #f0ece2; 
+    border-bottom: 1px solid rgb(11, 43, 29);
+    transition: all 1s;
+}
+.banner img{
+    z-index:-1;
+    overflow: hidden;
+}
+@media(min-aspect-ratio:16/9)
+{
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+}
+header .navbar ul{
+    list-style: none;
+    margin-right: 200px;
+}
+
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color:rgb(11, 43, 29) ;
+    
+    display: block;
+    
+}
+header .navbar ul li a:hover{
+    color: hsla(27, 18%, 47%, 0.9) ;
+}
+header .navbar ul li ul{
+    position: absolute;
+    
+    background-color: #f0ece2;
+    display: none;
+}
+header .navbar ul li ul li {
+    width: 100%;
+     border-top: 2px solid rgb(11, 43, 29);
+}
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul{
+    display: initial;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    
+}
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:991px)
+{
+    header{
+        padding:10px;
+        
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;left:0;right:0;
+        background: #f0ece2 ;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        
+display: none;
+    }
+    header .navbar ul li{
+        width:100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width:100%;
+    }
+    header .navbar ul li ul li{
+        background:#f0ece2 ;
+        width: 150px;
+        margin-left: 80px;
+        
+       
+       
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+        width: 40%;
+        
+    }
+
+}
+
+.pic1u{
+    width: 200px;
+    height: 200px;
+    margin-left: 200px;
+    
+}
+.pic2u{
+    width: 300px;
+    height: 350px;
+    
+    
+    margin-top: 100px;
+    
+}
+.pic3u{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    margin-bottom: -250px;
+}
+.pic4u{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-bottom: -100px;
+}
+.pics img
+{
+    padding: 5px;
+    
+}
+.pics{
+    margin-bottom: 400px;
+}
+
+.textimg1
+{
+    width: 400px;
+    position: relative;
+    float: right;
+    margin-top: -300px;
+    margin-right: 250px;
+    font-size: 20px;
+    letter-spacing:1.2px;
+    line-height: 30px;
+    color: rgb(11, 43, 29);
+    padding: 20px;
+    border: 2px solid rgb(6, 31, 20);
+}
+.textimg2
+{
+    width: 400px;
+    position: relative;
+    float: left;
+    margin-left: 230px;
+    margin-top: -30px;
+    font-size: 20px;
+    letter-spacing:1.2px;
+    line-height: 30px;
+    color: rgb(11, 43, 29);
+    padding: 20px;
+    border: 2px solid rgb(6, 31, 20);
+}
+
+.colu1
+{
+    
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.colu1 img
+{
+    width: 300px;
+    height: 250px;
+    animation:4s anim ease-in infinite ;
+}
+.colu1 p
+{
+    width: 300px;
+    height: 200px;
+    padding: 6px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid rgb(11, 43, 29);
+}
+.colu2
+{
+    margin-left: 550px;
+    margin-top: -520px;
+}
+.colu2 img
+{
+    width: 300px;
+    height: 250px;
+    animation:4s anim ease-in infinite ;
+}
+.colu2 p
+{   
+    width: 300px;
+    height: 200px;
+    padding: 6px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid rgb(11, 43, 29);
+}
+.colu3 img
+{
+    width: 300px;
+    height: 250px;
+    animation:4s anim ease-in infinite ;
+}
+@keyframes anim
+        {
+            0%
+            {
+                opacity:0;
+                transform: translateY(0%);
+            }
+            20%
+            {
+                opacity:1;
+                transform: translateY(5%);
+            }
+            100%
+            {
+                opacity: 0.6;
+                transform: translateY(0%);
+            }
+        }
+.colu3 p
+{   
+    width: 300px;
+    height: 200px;
+    padding: 6px;
+   
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid rgb(11, 43, 29);
+}
+.colu3
+{
+    margin-left: 1000px;
+    margin-top:-520px;
+}
+.borderr1
+
+{
+    border: 1px solid rgb(11, 43, 29);
+}
+
+
+/*footer*/
+footer{
+    background-color:rgb(6, 31, 20) ;
+    padding-top: 50px;
+    
+    }
+    .footer-container
+    {
+    width: 1120px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+    }
+    .footer-content
+    {
+    width:30%;
+    
+    }
+    h1{
+    font-size: 18px;
+    margin-bottom:15px ;
+    margin-top: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    }
+    .footer-content ul{
+    text-align: center;
+    
+    }
+    .list li{
+    width:auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    position: relative;
+    opacity: 0.7;
+    }
+    .place li{
+    width:auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    position: relative;
+    opacity: 0.7;
+    }
+    .legal li{
+    width:auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    position: relative;
+    opacity: 0.7;
+    }
+    
+    .icons li{
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    }
+    
+    a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    }
+    a:hover{
+    color: gray; 
+    }
+    .bottom
+    {
+    background: rgb(11, 43, 29);
+    margin-top: 20px;
+    height: 60px;
+    border-top:0.2px solid white;
+    
+    
+    }
+    .bottom p{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 16px;
+    padding: 20px;
+    text-align:center ;
+    }
+    hr{
+    height: 0px;
+    display: solid;
+    size:0.2;
+    
+    }
