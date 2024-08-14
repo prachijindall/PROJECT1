@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&family=Qwigley&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="adventure.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Whisper&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
+
+<style>
+    .card1
+    {
+        margin-top: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       
+        
+    }
+    .card2
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        margin-left:20px;
+    }
+    .card3
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+    .card4
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+    .content p
+    {
+        color: #f0ece2;
+    }
+    .card
+    {
+        position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background:#2C3333;
+  cursor: pointer;
+  margin-right: 30px; 
+    }
+    .card:hover {
+  height: 320px;
+}
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+}
+.imgbox img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.imgbox img:hover{
+filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+    -webkit-transition:all 0.8s ease;
+    border-radius: 20px;
+}
+.content {
+  margin-top: -30px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.card:hover > .content {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+
+.content h2 {
+  color: white;
+}
+.text1 h1
+{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+   margin-right: 20px;
+   font-family: "Dancing Script", cursive;
+    z-index: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+</style>
+   
+   
+</head>
+<body>
+    <script src="index.js"></script> 
+    <div class="banner1">
+    <img src="topp1.jpg" width="100%" height="800px">
+</div>
+<header id="navbar" class="bgcolor">
+    <a href="" class="logo"> <img src="logo.png" width="100px" height="80px" class="logoimg">TrailBlaze</a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><i class="bi bi-list"></i></label>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+           <li>
+            <a href="">Explore</a>
+            <ul>
+                <li>
+                    <a href="switzerland.html">Switzerland</a>
+                </li>
+               
+                
+                <li>
+                    <a href="london.html">London</a>
+                </li>
+                <li>
+                    <a href="india.html">India</a>
+                </li>
+                <li>
+                    <a href="usa.html">USA</a>
+                </li>
+            </ul>
+           </li>
+           <li>
+            <a href="">Styles</a>
+            <ul>
+                <li>
+                    <a href="adventure.html">Adventure</a>
+                </li>
+                <li>
+                    <a href="roadtrip.html"> Road Trips </a>
+                </li>
+                <li>
+                    <a href="citybreaks.html">City Breaks</a>
+                </li>
+                
+                <!--<li>
+                    <a href="">Scenery</a>
+                </li> -->
+            </ul>
+           </li>
+           <li>
+            <a href="wildlife.html">Wildlife</a>
+           </li>
+           <li>
+            <a href="gallery.html">Gallery</a>
+           </li>
+        </ul>
+
+    
+    </nav>
+   </header>
+
+   <!--div1-->
+   <div class="div1">
+    <img src="advtop1.avif" class="imgside1" width="400px" height="300px">
+    <div class="text">
+<p>Adventure is the thrill of the unknown, where every step is a discovery and every moment a chance to explore. It’s the call of the wild, the whisper of the wind through towering mountains, and the rush of rivers carving their paths through uncharted lands. Adventure is found in the courage to embrace uncertainty, to push beyond the comfort of the familiar, and to seek out the beauty in the unexpected</p>
+    </div>
+   </div>
+   <!--heading-->
+   <h3>
+    Welcome to Glamour of <br> Adventures
+
+   </h3>
+ <!--icons-->
+ <div class="camp">
+ <img src="camping.png">
+
+<div class="icons1">
+    <div class="himg">
+    <img src="hiking.png" width="100px" height="100px">
+<p>Hiking trails wind through forests, where nature’s beauty is vast,
+    Each step reveals a new wonder, as the journey unfolds fast.</p>
+
+</div>
+<div class="rimg">
+    <img src="rafting.png" width="100px" height="100px">
+<p>Rafting rushes through wild rapids, excitement in every splash,
+    The river’s roar and swift currents create an exhilarating clash.</p>
+</div>
+</div>
+<div class="icons2">
+    <div class="bimg">
+    <img src="bonfire.png" width="100px" height="100px">
+<p>The bonfire crackles, casting a warm glow on faces gathered close,
+    Stories and laughter mix with the night air as embers softly float.</p>
+</div>
+<div class="cimg">
+    <img src="campp.jpg" width="100px" height="100px">
+<p>At camp, tents stand still beneath a sky full of stars,
+    Peaceful moments and camaraderie fill the space, away from life’s scars.</p>
+</div>
+</div>
+</div>
+<div class="center">
+    <img src="center1.jpeg" width="100%" height="400px">
+    <p>Bonfire is just about the memories <br> in mountains.</p>
+</div>
+
+
+<!--card -->
+
+<div class="card1">
+    <div class="text1">
+        <h1>Switzerland</h1> </div>
+    <div class="card">
+        
+      <div class="imgbox">
+       <img src="skiing.webp">
+      </div>
+
+      <div class="content">
+        <h2>Skiing</h2>
+        <p>
+            Zermatt: Home to the iconic Matterhorn, Zermatt offers year-round skiing with some of the highest slopes in the Alps. The resort features over 360 km of pistes, suitable for all skill levels.
+            
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox">
+        <img src="para.jpg">
+      </div>
+
+      <div class="content">
+        <h2>Paragliding</h2>
+        <p>
+            Interlaken: The adventure capital of Switzerland, Interlaken offers stunning flights over the lakes of Thun and Brienz, with views of the Jungfrau region’s mountains.
+           
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox">
+        <img src="bike.jpg">
+      </div>
+
+      <div class="content">
+        <h2>Mountain Biking</h2>
+        <p>
+            Graubünden: Offers over 4,000 km of marked trails, including the famous Alps Epic Trail from Davos to Arosa. It’s a mountain biking paradise with trails for all levels.
+            
+        </p>
+      </div>
+    </div>
+  </div> 
+  <!--card2-->
+  
+    <div class="card2">
+        <div class="text1">
+            <h1>London</h1> </div>
+    <div class="card">
+        
+      <div class="imgbox">
+       <img src="lsky.jpeg" height="200px">
+      </div>
+
+      <div class="content">
+        <h2>Indoor Skydiving</h2>
+        <p>
+            Experience the sensation of freefall in a safe and controlled environment with indoor skydiving. It’s a great way to get a taste of skydiving.
+            
+        </p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="imgbox">
+        <img src="lzip.jpg" height="200px">
+      </div>
+
+      <div class="content">
+        <h2>Zip Now London</h2>
+        <p>
+            Experience the thrill of urban ziplining on one of the world's longest and fastest zip lines, with stunning views of the London skyline.
+           
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox">
+        <img src="lorbit.jpg" height="200px">
+      </div>
+
+      <div class="content">
+        <h2>ArcelorMittal Orbit</h2>
+        <p>
+            Slide down the world’s longest and tallest tunnel slide or challenge yourself with an abseil down the 178-meter structure, offering an adrenaline rush with a view.
+            
+        </p>
+      </div>
+    </div>
+  </div> 
+
+  <!--card3-->
+  <div class="card3">
+    <div class="text1">
+        <h1>India</h1> </div>
+<div class="card">
+    
+  <div class="imgbox">
+   <img src="irock.jpg" height="200px">
+  </div>
+
+  <div class="content">
+    <h2> Rock Climbing</h2>
+    <p>
+        Hampi is not only a UNESCO World Heritage site but also a paradise for rock climbers.
+        
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="imgbox">
+    <img src="iscuba.jpg" height="200px">
+  </div>
+
+  <div class="content">
+    <h2>Scuba Diving</h2>
+    <p>
+        The Andaman and Nicobar Islands offer some of the best scuba diving spots in India, with crystal-clear waters, vibrant coral reefs
+       
+    </p>
+  </div>
+</div>
+<div class="card">
+  <div class="imgbox">
+    <img src="lorbit.jpg" height="200px">
+  </div>
+
+  <div class="content">
+    <h2>Trekking </h2>
+    <p>
+        India offers some of the world’s most spectacular trekking routes. Popular treks include the Roopkund Trek in Uttarakhand.
+        
+    </p>
+  </div>
+</div>
+</div> 
+
+<!--card4-->
+<div class="card4">
+    <div class="text1">
+        <h1>USA</h1> </div>
+<div class="card">
+    
+  <div class="imgbox">
+   <img src="uraft.jpeg" height="200px">
+  </div>
+
+  <div class="content">
+    <h2>White-Water Rafting</h2>
+    <p>
+        Experience the thrill of navigating the rapids of the Colorado River, which cuts through the Grand Canyon.
+        
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="imgbox">
+    <img src="uss.jpeg" height="200px">
+  </div>
+
+  <div class="content">
+    <h2> Kayaking </h2>
+    <p>
+        Explore the unique ecosystem of the Everglades by kayaking through its mangrove tunnels and open waters. 
+       
+    </p>
+  </div>
+</div>
+<div class="card">
+  <div class="imgbox">
+    <img src="uhik.jpg" height="200px">
+  </div>
+
+  <div class="content">
+    <h2>Hiking </h2>
+    <p>
+        One of the world’s most iconic natural wonders, the Grand Canyon offers a range of hiking trails that cater to all levels.
+        
+    </p>
+  </div>
+</div>
+</div> 
+  
+  <footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h1>STYLES</h1>
+            <ul class="list">
+           <li> <a href="citybreaks.html">City Breaks</a></li>
+          <!--<li> <a href="">Scenic Trips</a></li> -->  
+            <li> <a href="adventure.html">Adventure</a></li>
+            <li> <a href="roadtrip.html">Road Trips</a></li>
+            </ul> </div> 
+            <div class="footer-content">
+                <h1>PLACES</h1>
+                <ul class="place">
+                    <li> <a href="india.html">India</a></li>
+                    <li> <a href="usa.html"> USA</a></li>
+                    <li> <a href="switzerland.html"> Switzerland</a></li>
+                    <li> <a href="london.html">London</a></li>
+
+                </ul>  
+            </div>
+            <div class="footer-content">
+                <h1>LEGAL NOTICE</h1>
+                <ul class="legal">
+                    <li> <a href="">Terms and Conditions</a></li>
+                    <li> <a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h1>ABOUT US</h1>
+                <ul class="icons">
+                    <li> <a href=""> <i class="bi bi-facebook"></i> </a></li>
+                    <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            
+            <p>&copy;2024 Your Company.All Rights Are Conserved</p>
+          
+        </div>
+</footer>
+  
+</body>
+</html>

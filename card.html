@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.card1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", Arial, sans-serif;
+  background: #7f9ead;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: #fff;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.card:hover {
+  height: 320px;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  padding: 5px 20px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover > .content {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+
+.content h2 {
+  color: #7f9ead;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="card1">
+    <div class="card">
+      <div class="imgbox">
+       <img src="skiing.webp">
+      </div>
+
+      <div class="content">
+        <h2>Skiing</h2>
+        <p>
+            Zermatt: Home to the iconic Matterhorn, Zermatt offers year-round skiing with some of the highest slopes in the Alps. The resort features over 360 km of pistes, suitable for all skill levels.
+            
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox">
+        <img src="para.jpg">
+      </div>
+
+      <div class="content">
+        <h2>Paragliding</h2>
+        <p>
+            Interlaken: The adventure capital of Switzerland, Interlaken offers stunning flights over the lakes of Thun and Brienz, with views of the Jungfrau region’s mountains.
+           
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgbox">
+        <img src="bike.jpg">
+      </div>
+
+      <div class="content">
+        <h2>Mountain Biking</h2>
+        <p>
+            Graubünden: Offers over 4,000 km of marked trails, including the famous Alps Epic Trail from Davos to Arosa. It’s a mountain biking paradise with trails for all levels.
+            
+        </p>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
